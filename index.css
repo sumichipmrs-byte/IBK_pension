@@ -114,12 +114,32 @@ header.scrolled .logo-text {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 1.6rem;
-    font-weight: 800;
-    color: var(--primary);
+    gap: 6px;
     text-decoration: none;
-    letter-spacing: -0.5px;
+}
+
+.logo-img-wrapper {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img-wrapper img {
+    height: 32px;
+    min-width: 130px;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.6rem;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -1.5px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .ibk-brand {
@@ -471,8 +491,39 @@ footer {
         padding: 2rem 1.5rem;
     }
 
-    header .btn {
-        padding: 0.6rem 1.25rem;
-        font-size: 0.9rem;
+    header .nav-btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+        flex-shrink: 0;
+    }
+
+    .logo-text {
+        font-size: 1.05rem;
+        letter-spacing: -0.8px;
+    }
+
+    .logo-img-wrapper {
+        width: 22px;
+        height: 22px;
+    }
+
+    .logo-img-wrapper img {
+        height: 22px;
+        min-width: 90px;
+    }
+
+    .logo {
+        gap: 4px;
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    .nav-content {
+        padding: 0;
+        gap: 8px;
+    }
+
+    .container {
+        padding: 0 1rem;
     }
 }
